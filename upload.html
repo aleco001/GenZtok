@@ -1,0 +1,43 @@
+<!-- Upload Modal -->
+<div class="upload-modal" id="uploadModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Upload Video</h2>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="upload-area" id="uploadArea">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Select video to upload</h3>
+                <p>Or drag and drop</p>
+                <p class="formats">MP4, WebM, or MOV</p>
+                <input type="file" id="videoInput" accept="video/*" hidden>
+                <button class="select-btn" id="selectVideo">Select File</button>
+            </div>
+            <div class="upload-details" id="uploadDetails" style="display: none;">
+                <video id="previewVideo" controls></video>
+                <div class="upload-form">
+                    <input type="text" placeholder="Write a caption..." class="caption-input">
+                    <div class="hashtag-suggestions">
+                        <span class="suggested-tag">#trending</span>
+                        <span class="suggested-tag">#fyp</span>
+                        <span class="suggested-tag">#viral</span>
+                        <span class="suggested-tag">#funny</span>
+                    </div>
+                    <div class="privacy-settings">
+                        <label>
+                            <input type="radio" name="privacy" checked> Everyone
+                        </label>
+                        <label>
+                            <input type="radio" name="privacy"> Friends
+                        </label>
+                        <label>
+                            <input type="radio" name="privacy"> Only me
+                        </label>
+                    </div>
+                    <button class="publish-btn">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
